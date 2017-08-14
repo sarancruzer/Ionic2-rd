@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="donorcolor">
+  <ion-buttons start (click)="presentActionSheet($event)">
+      <button ion-button icon-only>
+       <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </ion-buttons>
+    
+    <button ion-button menuToggle right end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Dashboard</ion-title>
+   
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<div style="font-size: 5px;">
+  <!--<ion-segment [(ngModel)]="day" style="font-size: 5px;">
+    <ion-segment-button value="posted">
+      Posted
+    </ion-segment-button>
+    <ion-segment-button value="1day">
+      1 day ago
+    </ion-segment-button>
+    <ion-segment-button value="15days">
+      15 day ago
+    </ion-segment-button>
+    <ion-segment-button value="30days">
+      30 day ago
+    </ion-segment-button>
+    <ion-segment-button value="All">
+      All
+    </ion-segment-button>
+  </ion-segment>-->
+</div>
+<div #map id="map"></div>  
+</ion-content>

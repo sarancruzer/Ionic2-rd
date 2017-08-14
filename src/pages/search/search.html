@@ -1,0 +1,14 @@
+<ion-list class="location-search">
+    <ion-item>
+    <ion-label>Category</ion-label>
+    <ion-select [(ngModel)]="gaming">
+      <ion-option value="nes">Category 1</ion-option>
+      <ion-option value="n64">Category 2</ion-option>
+    </ion-select>
+    </ion-item>
+    <ion-item>
+    <ion-input type="text" placeholder="Organisation | Location"></ion-input>
+  </ion-item>
+  <ion-item><ion-label><span>1 day ago</span> | <span> 15 day ago</span></ion-label></ion-item>
+  <ion-item><ion-label><span>30 day ago</span> | <span> All</span></ion-label></ion-item>
+    </ion-list>

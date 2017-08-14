@@ -1,0 +1,87 @@
+<ion-header no-border>
+  <ion-navbar color="donorcolor">
+   <ion-title>Register</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="signup-bgimg">
+
+<div class="log-reg"><img src="assets/images/register.png"></div>
+<form [formGroup]="authForm">
+<ion-card class="login-reg">
+
+<br/>
+<br/>
+<br/>
+<ion-list>
+  <ion-item>
+    <ion-input type="text" placeholder="Name" [(ngModel)]="donor_name" formControlName="donor_name" 
+    [class.invalid]="!authForm.controls.donor_name.valid && (authForm.controls.donor_name.dirty)">
+    </ion-input>
+
+  </ion-item>
+  <small *ngIf="!authForm.controls.donor_name.valid && (authForm.controls.donor_name.dirty || submitAttempt)">
+        <p class="valid err-reds">This field is required.</p>
+     </small>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-input type="text" placeholder="Email" [(ngModel)]="email" formControlName="email" 
+    [class.invalid]="!authForm.controls.email.valid && (authForm.controls.email.dirty)"></ion-input>
+
+  </ion-item>
+  <small *ngIf="!authForm.controls.email.valid && (authForm.controls.email.dirty || submitAttempt)">
+        <p class="valid err-reds">This field is required.</p>
+     </small>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-input type="text" placeholder="Mobile" [(ngModel)]="mobile" formControlName="mobile" 
+    [class.invalid]="!authForm.controls.mobile.valid && (authForm.controls.mobile.dirty)"></ion-input>
+  </ion-item>
+  <small *ngIf="!authForm.controls.mobile.valid && (authForm.controls.mobile.dirty || submitAttempt)">
+        <p class="valid err-reds">This field is required.</p>
+  </small>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-input type="text" placeholder="Username" [(ngModel)]="username" formControlName="username" 
+    [class.invalid]="!authForm.controls.username.valid && (authForm.controls.username.dirty)"></ion-input>
+  </ion-item>
+  <small *ngIf="!authForm.controls.username.valid && (authForm.controls.username.dirty || submitAttempt)">
+        <p class="valid err-reds">This field is required.</p>
+     </small>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-input type="password" placeholder="Password" [(ngModel)]="password" formControlName="password" 
+    [class.invalid]="!authForm.controls.password.valid && (authForm.controls.password.dirty)" 
+    type="{{mytype}}"></ion-input>
+  </ion-item>
+  <small *ngIf="!authForm.controls.password.valid && (authForm.controls.password.dirty || submitAttempt)">
+        <p class="valid err-reds">This field is required.</p>
+     </small>
+</ion-list>
+
+<ion-list>
+  <ion-item>
+    <ion-input type="password" placeholder="Confirm Password" [(ngModel)]="confirmpassword" formControlName="confirmpassword" type="{{mytype}}"
+    [class.invalid]="!authForm.controls.confirmpassword.valid && (authForm.controls.confirmpassword.dirty)"></ion-input>
+  </ion-item>
+  <small *ngIf="!authForm.controls.confirmpassword.valid && (authForm.controls.confirmpassword.dirty || submitAttempt)">
+        <p class="valid err-reds">This field is required.</p>
+     </small>
+</ion-list>
+
+<br/><br/>
+</ion-card>
+</form>
+ <button class="login-btn" ion-button small (click)="updateRegister()">Save <i class="fa fa-angle-double-right"></i></button>
+<br/><br/>
+
+
+</ion-content>

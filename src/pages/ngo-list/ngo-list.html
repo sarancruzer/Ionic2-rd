@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar color="donorcolor">
+    <ion-buttons start (click)="presentActionSheet($event)">
+      <button ion-button icon-only>
+       <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </ion-buttons>
+    <button ion-button menuToggle right end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>NGO List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="login-bgimg">
+<ion-searchbar class="search-icons"></ion-searchbar>
+<ion-card (click)="viewngo()" *ngFor="let ngolist of ngolistInfo">
+ <ion-grid class="listed-ngo">
+  <ion-row>
+    <ion-col col-12><p><i class="fa fa-building-o" aria-hidden="true"></i>{{ngolist.org_name}}</p></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-12><b>{{ngolist.cat_name}}</b></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-12><small>{{ngolist.city_name}},{{ngolist.state_name}},{{ngolist.country_name}}</small></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-12><small>{{ngolist.contact_number_cell}}</small></ion-col>
+  </ion-row>
+  
+   <ion-row>
+    <ion-col col-12><span>Current Needs</span></ion-col>
+  </ion-row>
+   <ion-row>
+    <ion-col col-12><strong></strong></ion-col>
+  </ion-row>
+  </ion-grid>
+</ion-card>
+
+</ion-content>

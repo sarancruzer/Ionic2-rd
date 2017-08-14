@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-navbar color="donorcolor">
+    <button ion-button menuToggle right end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Donations List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="login-bgimg">
+<div class="register-form">
+<div class="segments">
+  <ion-segment [(ngModel)]="donations">
+    <ion-segment-button value="nonprofit" (click)="DonationList()">
+      Non Profit
+    </ion-segment-button>
+    <ion-segment-button value="donationslist" (click)="DonationListGift()">
+      Donations List
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<br />
+<div [ngSwitch]="donations">
+  <ion-list *ngSwitchCase="'nonprofit'">
+<ion-searchbar class="search-icons"></ion-searchbar>
+<ion-card class="listed-card" *ngFor="let donationlist of donationlistInfo">
+ <ion-grid class="listed-ngo ngo-border">
+  <ion-row class="ngo-head">
+    <ion-col col-12><h2><i class="fa fa-building" aria-hidden="true"></i></h2></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6><strong>Product</strong></ion-col>
+
+    <ion-col col-6></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6><strong>Donation Type</strong></ion-col>
+    <ion-col col-6>{{donationlist.donated_type}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6><strong>Donated Quantity</strong></ion-col>
+    <ion-col col-6>{{donationlist.qty_donated}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6><strong>Donated Date</strong></ion-col>
+    <ion-col col-6>{{donationlist.donation_date}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6><strong>Received Quantity</strong></ion-col>
+    <ion-col col-6>{{donationlist.qty_received}}</ion-col>
+  </ion-row>
+   <ion-row>
+    <ion-col col-6><strong>Received Date</strong></ion-col>
+    <ion-col col-6>{{donationlist.received_date}}</ion-col>
+  </ion-row>
+   <ion-row>
+    <ion-col col-6><strong>Received Status</strong></ion-col>
+    <ion-col col-6 *ngIf="donationlist.DPstatus == 0">Processing</ion-col>
+    <ion-col col-6 *ngIf="donationlist.DPstatus == 1">Received</ion-col>
+  </ion-row>
+  </ion-grid>
+</ion-card>
+</ion-list>
+ <ion-list *ngSwitchCase="'donationslist'">
+ <ion-searchbar class="search-icons"></ion-searchbar>
+<ion-card class="listed-card" *ngFor="let donationgiftlist of donationgiftlistInfo">
+ <ion-grid class="listed-ngo ngo-border">
+  <ion-row class="ngo-head">
+    <ion-col col-12><h2><i class="fa fa-building" aria-hidden="true"></i></h2></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6><strong>Item</strong></ion-col>
+    <ion-col col-6>{{donationgiftlist.item}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6><strong>Description</strong></ion-col>
+    <ion-col col-6>{{donationgiftlist.description}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6><strong>Posted Date</strong></ion-col>
+    <ion-col col-6>{{donationgiftlist.posted_date}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6><strong>Publish Status</strong></ion-col>
+    <ion-col col-6>{{donationgiftlist.status}}</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-6><strong>Donated To</strong></ion-col>
+    <ion-col col-6></ion-col>
+  </ion-row>
+   <ion-row>
+    <ion-col col-6><strong>Donated Date</strong></ion-col>
+    <ion-col col-6>{{donationgiftlist.donated_date}}</ion-col>
+  </ion-row>
+   <ion-row>
+    <ion-col col-6><strong>Take Action</strong></ion-col>
+    <ion-col col-6><ion-badge item-end (click)="changeStatus()"><i class="fa fa-ban" aria-hidden="true"></i> Block</ion-badge>
+    <ion-badge item-end (click)="changeStatus()"><i class="fa fa-check" aria-hidden="true"></i> Approved
+    </ion-badge>
+    <ion-badge item-end (click)="donateNeeds()"><i class="fa fa-edit" aria-hidden="true"></i> Donate
+    </ion-badge>
+     <ion-badge item-end (click)="modifyNeeds()"><i class="fa fa-edit" aria-hidden="true"></i> Modify
+    </ion-badge></ion-col>
+  </ion-row>
+  </ion-grid>
+</ion-card>
+ </ion-list>
+</div>
+</div>
+
+</ion-content>

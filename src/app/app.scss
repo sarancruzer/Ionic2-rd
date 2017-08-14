@@ -1,0 +1,196 @@
+// http://ionicframework.com/docs/v2/theming/
+@import url('https://fonts.googleapis.com/css?family=Padauk');
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.bar-button-menutoggle-md ion-icon{ font-size:30px;}
+.toolbar-md-donorcolor .bar-button-clear-md, .toolbar-md-donorcolor .bar-button-default-md, .toolbar-md-donorcolor .bar-button-outline-md, .toolbar-md-donorcolor .toolbar-title-md{ font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;}
+
+.donor-bg-color											{background: rgba(21,203,148,1);
+background: -moz-linear-gradient(top, rgba(21,203,148,1) 0%, rgba(19,199,142,1) 27%, rgba(18,196,137,1) 47%, rgba(18,196,137,1) 63%, rgba(16,193,134,1) 77%, rgba(12,186,122,1) 90%, rgba(6,177,109,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(21,203,148,1)), color-stop(27%, rgba(19,199,142,1)), color-stop(47%, rgba(18,196,137,1)), color-stop(63%, rgba(18,196,137,1)), color-stop(77%, rgba(16,193,134,1)), color-stop(90%, rgba(12,186,122,1)), color-stop(100%, rgba(6,177,109,1)));
+background: -webkit-linear-gradient(top, rgba(21,203,148,1) 0%, rgba(19,199,142,1) 27%, rgba(18,196,137,1) 47%, rgba(18,196,137,1) 63%, rgba(16,193,134,1) 77%, rgba(12,186,122,1) 90%, rgba(6,177,109,1) 100%);
+background: -o-linear-gradient(top, rgba(21,203,148,1) 0%, rgba(19,199,142,1) 27%, rgba(18,196,137,1) 47%, rgba(18,196,137,1) 63%, rgba(16,193,134,1) 77%, rgba(12,186,122,1) 90%, rgba(6,177,109,1) 100%);
+background: -ms-linear-gradient(top, rgba(21,203,148,1) 0%, rgba(19,199,142,1) 27%, rgba(18,196,137,1) 47%, rgba(18,196,137,1) 63%, rgba(16,193,134,1) 77%, rgba(12,186,122,1) 90%, rgba(6,177,109,1) 100%);
+background: linear-gradient(to bottom, rgba(21,203,148,1) 0%, rgba(19,199,142,1) 27%, rgba(18,196,137,1) 47%, rgba(18,196,137,1) 63%, rgba(16,193,134,1) 77%, rgba(12,186,122,1) 90%, rgba(6,177,109,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15cb94', endColorstr='#06b16d', GradientType=0 );}
+.donor-fcolor											{color:#15CA93;}
+.onboard-title											{font-size:38px;color:#fff;}
+.onboard-title p										{font-size:35px; color:#fff;  text-shadow: 0px 1px 2px #5f5b5b;}
+.onboard-title p b										{font-size:35px; color:#fff;  font-weight: bold;}
+.log-justify											{margin-top:25px;margin-left:30%;}
+
+.register-btn											{font-size:20px;}
+.button-md												{background:#15CA93;}
+.onboard-titles p										{color:#fff;font-size:35px;left:21%; width:60%; margin-top:-17px;position:absolute;text-align:center;text-shadow: 0 1px 2px #5f5b5b;}
+.onboard-titles p b										{font-size:35px; color:#fff;  font-weight: bold;}
+/*-----------------------------------------------logo-----------------------------------------------*/
+.logo-parent									        {text-align:center;}
+.logo-parents									        {text-align:center; padding-bottom:25px;}
+.center-image									        {margin:0 auto;max-width:302px !important;max-height:310px !important; margin-top:50px;}
+.center-images									        {margin:0 auto;max-width:302px !important;max-height:310px !important; margin-top:22px;}
+.hand-center-image								        {margin:0 auto;max-width:302px !important;max-height:310px !important; margin-top:50px;}
+.landpage-hand .toolbar-md .toolbar-background-md       {background:none !important; border:none !important;}
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before{ background:none;}
+.list-md .item-input.item-input-has-focus:last-child, .list-md .item-input.input-has-focus:last-child{ border-bottom:none; box-shadow:none !important;}
+.liste-select .item-inner .input-wrapper .label-md { margin:0px;}
+.liste-select .item-inner .input-wrapper .select-md{ padding:0px;}
+.login-reg .list-md .item-md .item-inner{}
+
+
+.menu-bg{ background: rgba(0, 0, 0, 0) linear-gradient(45deg, silver 0%, white 50%, gray 100%);}
+.menu-bg .list-md .item-md{ padding-left:0px !important; background:none; margin:0px;}
+.menu-bg .list-md .item-md .item-inner .input-wrapper .label-md{color:#000; padding-left:15px;font-family: 'Padauk', sans-serif;font-size:18px; margin:0px;}
+.menu-bg .list-md .item-block{ min-height:45px !important;}
+.menu-bg .list-md .item-block .item-inner {
+    border-bottom: 1px solid #c6c1c1;
+}
+
+.menu-bg{ background: rgba(0, 0, 0, 0) linear-gradient(45deg, silver 0%, white 50%, gray 100%);}
+.menu-bg .list-ios .item-ios{ padding-left:0px !important; background:none; margin:0px;}
+.menu-bg .list-ios .item-ios .item-inner .input-wrapper .label-ios{color:#000; padding-left:15px;font-family: 'Padauk', sans-serif;font-size:18px; margin:0px;}
+.menu-bg .list-ios .item-block{ min-height:45px !important;}
+.menu-bg .list-ios .item-block .item-inner {
+    border-bottom: 1px solid #c6c1c1;
+}
+
+.page-donor .scroll-content{ padding:10px !important;}
+.needs-menu .toolbar-title {
+    color: #fff;
+    font-size:25px !important;
+    text-shadow: 0 1px 2px #5f5b5b;
+}
+
+.needs-menu .toolbar-title b {
+    color: #fff;
+    font-size:25px;
+    font-weight: bold;
+}
+.text-input-ios{padding-left:11px;}
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{border-bottom:none !important;}
+.needs-menu{padding:5px !important;}
+.needs-menu .toolbar-title-ios p{ font-size:18px !important;}
+.needs-menu .toolbar-title-ios b{font-size:18px !important;}
+.bar-button-menutoggle-ios ion-icon						 {font-size:30px !important;}
+.toolbar-title-ios										 {font-size:25px !important;}
+.alert-wrapper .alert-head								 { background:#15CA93;}
+.alert-head{padding:15px !important; text-align:center; }
+.alert-head h2.alert-title{ text-align:center !important;  font-size:18px;  font-weight:400;color:#fff;}
+#alert-msg-0{display:none !important;}
+#alert-msg-1{display:none !important;}
+#alert-msg-2{display:none !important;}
+#alert-msg-3{display:none !important;}
+#alert-msg-4{display:none !important;}
+#alert-msg-5{display:none !important;}
+#alert-msg-6{display:none !important;}
+
+.alert-md .alert-tappable{ min-height:35px !important;}
+
+.alert-wrapper .alert-head								 { background:#15CA93;}
+.alert-head{padding:15px !important; text-align:center; }
+.alert-head h2.alert-title{ text-align:center !important;  font-size:18px;  font-weight:400;color:#fff;}
+#alert-msg-0{display:none !important;}
+.alert-ios .alert-tappable{ min-height:35px !important;}
+
+.alert-md .alert-radio-label {
+    -moz-box-flex: 1;
+    color: initial;
+    flex: 1 1 0;
+    font-size: 15px;
+    overflow: hidden;
+        padding: 12px 23px !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.alert-ios .alert-radio-label {
+    -moz-box-flex: 1;
+    color: initial;
+    flex: 1 1 0;
+    font-size: 15px;
+    overflow: hidden;
+        padding: 12px 23px !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.alert-button-group{padding:0px !important; background:#f4f3f2!important;}
+.toolbar-title-ios {
+    font-size:18px !important;
+    font-weight:400 !important;
+    text-transform:uppercase !important;
+}
+.header-ios .button-inner{ font-size:18px;}
+.back-button-icon { font-size:30px;}
+/*-----------------------------------------------logo-----------------------------------------------*/
+p.err-reds{
+    font-size:12px;
+}

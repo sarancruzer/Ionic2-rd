@@ -1,0 +1,33 @@
+page-login {
+/*------------------------------Android css------------------------------*/
+
+.login-reg												{margin:60px 10px 10px; height:200px; background:rgba(255, 255, 255, 0.73);border-radius:0px !important; position:relative;}
+.login-reg .list-md .item-md .item-inner .input-md		{font-size:15px; color:#000; border:1px solid #06b16c;margin: 11px;}
+.login-reg .list-md .item-md .item-inner				{padding-right:0px !important;}
+.login-reg .list-md .item-md							{padding-left:0px !important; background:none;}
+.login-btn												{float:right;margin-top:-34px;background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #16cb95 0%, #12c68d 22%, #12c68d 42%, #0dbd80 61%, #08b472 80%, #07b26e 100%); border-radius:0px;}
+.sign-bot												{background:#454545; height:50px; margin: 9px; opacity: 0.6;}
+.sign-bot p 											{font-size:17px;padding:15px; color:#fff;}
+.sign-bot p span 										{font-size:17px; color:#15ca93;}
+.login-bgimg											{background-image:url('../assets/images/login.jpg');width:100%;background-repeat:no-repeat; background-size:cover; min-height:300px;max-height:420px;height:100%;}
+.forgot a												{ text-align:center; color:#fff; font-size:15px; width:100%; float:left; line-height:40px; }
+.list-md .item-input:last-child							{border-bottom:none !important;}
+.list-md .item-input.item-input-has-focus:last-child, .list-md .item-input.input-has-focus:last-child{border-bottom-color:none;box-shadow:none;}
+
+/*------------------------------Android css end------------------------------*/
+
+/*------------------------------Ios css------------------------------*/
+.login-reg .list-ios .item-ios							 {padding-left:0px !important; background:none;}
+.login-reg .list-ios .item-ios .item-inner				 {border:none !important;}
+.login-reg .list-ios .item-ios .item-inner .input-ios 	 {border:1px solid #06b16c;color:#000;font-size:15px;margin:11px;}
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{border-bottom:none !important;}
+.list-ios > .item-block:first-child 					 {border-top:none !important;}
+.item-ios.item-block .item-inner						 {padding-right:0px !important;}
+.text-input-ios											 {padding-left:5px !important;}
+.bar-button-menutoggle-ios ion-icon						 {}
+
+/*------------------------------Ios css end------------------------------*/
+
+
+
+}

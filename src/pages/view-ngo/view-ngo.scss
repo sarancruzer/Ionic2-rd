@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Padauk');
+
+page-view-ngo {
+ion-app.md [padding], ion-app.md [padding] .scroll-content{padding:10px;}
+.contact-list{ margin:5px; }
+.contact-list .row .col{padding:0px;}
+.contact-list .row .col b{font-family: 'Padauk', sans-serif; font-size:20px; color:#000; font-weight:600; padding-bottom:5px; float: left; width:100%;} 
+.contact-list .row .col p{font-family: 'Padauk', sans-serif; font-size:18px; color:#666666; font-weight:400; line-height:20px;}
+.contact-list .row .col p i{color:#0dbd7f; font-size:25px;}
+.segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{ background:#49a1e3; font-size:12px;ont-weight:600; color:#333; border-bottom:none;}
+.segment-md{ background:#49a1e3; border:1px solid #49a1e3;}
+.segment-md .segment-button{ border-right:1px solid #fff; height:35px; line-height:35px; font-size:13px !important; color:#fff;ont-weight:400;border-bottom:none;padding: 0 3px;}
+.location-leade .item-md{ border:1px solid red; padding-left:0px;}
+.loacation-detalis{ float:left;  margin: 0 0px 10px 0; border-bottom:1px solid #f87ba8; padding-bottom:30px !important;}
+.loacation-detalis b{font-family: 'Padauk', sans-serif; font-size:20px; color:#000; font-weight:600; padding-bottom:5px; float: left; width:100%;}
+.loacation-detalis p{font-family: 'Padauk', sans-serif; font-size:18px !important; color:#666666 !important; font-weight:400; line-height:25px !important; float:left; width:100% !important; }
+.loacation-detalis p i{color:#0dbd7f; font-size:25px; width:25px; text-align:left;}
+.badge-md{ background:#7e7e7e;}
+ion-badge{ font-size:15px; font-weight:400;}
+.liste-iteam{padding-left:0px;}
+.liste-iteam img{ border:1px solid #c2c2c2; float:left;}
+.liste-iteam b{ float:left !important; width:auto !important; padding-left:8px !important;}
+.liste-iteam p{font-family: 'Padauk', sans-serif; font-size:18px; color:#666666; font-weight:400; line-height:20px;padding-top: 15px;
+    width: 100%;}
+	.login-btn {
+    background: transparent linear-gradient(to right, #06b16d 0%, #09b674 33%, #10c287 51%, #15cb94 68%, #16cc95 100%) repeat scroll 0 0;
+    border-radius: 0;
+    float: right;
+  font-size:15px; font-weight:400; height:40px;
+    padding: 0;
+ 
+    width:100%;
+}
+
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Padauk');
+
+page-send-donation {
+.signup-bgimg{background-image: url('../assets/images/Religious_Dashboard.jpg');width:100%;background-repeat: no-repeat;background-size: cover;position:relative;}
+.signup-bgimg .scroll-content							{padding:2px !important;}
+.ion-cardpage											{margin:0px !important;}
+.login-reg												{margin:40px 10px 10px; background:rgba(255, 255, 255, 0.73);border-radius:0px !important; position:relative;}
+.login-reg .list-md .item-md .item-inner .input-md		{font-size:15px; color:#000; border:1px solid #06b16c;margin: 11px;}
+.login-reg .list-md .item-md .item-inner				{padding-right:0px !important; }
+.login-reg .list-md .item-md							{padding-left:0px !important; background:none; border-bottom:1px solid #f977a6; padding-bottom: 5px;}
+.login-btn												{float:right;margin-top:-34px; padding:0px; position:relative; background:rgba(0, 0, 0, 0) linear-gradient(to right, #06b16d 0%, #09b674 33%, #10c287 51%, #15cb94 68%, #16cc95 100%); border-radius:0px;text-transform: capitalize; font-weight:400; width:92%;}
+.login-reg .list-md .item-block .input-wrapper .label-md{ margin:0px;font-size:19px; color:#000;font-family: 'Padauk', sans-serif;}
+.login-reg .list-md .item-block{min-height:30px !important;}
+.login-reg .list-md{ margin:10px;}
+.login-btn .button-inner i.fa-angle-double-right {
+    float: right;
+    font-size: 50px;
+    font-weight: 400;
+    position: absolute;
+    right: 9px;
+    top: -6%;
+}
+.log-reg												{ 
+    top:25px;
+    position: absolute; left:3px; width:100%;
+  
+    z-index: 99;}
+.badge-md{ background:#7e7e7e; font-size:14px; font-family: 'Padauk', sans-serif; color:#fff; font-weight:400;}
+.log-reg img{ float:left;}
+.log-reg h1{   background: rgba(0, 0, 0, 0) linear-gradient(to right, #dd3b76 0%, #dd3b76 21%, #e64d85 44%, #f774a4 65%, #f977a7 86%, #f977a7 100%) repeat scroll 0 0;
+    float: left;
+    font-size: 20px;
+    height: 45px;
+    line-height: 44px;
+    padding-left: 10px;
+    width: 75%; color:#fff;}
+.text-input-md{margin:10px 8px;}
+
+/*------------------------------Ios css------------------------------*/
+ion-badge{padding:5px 9px 3px;}
+.login-reg .list-ios .item-ios .item-inner .input-ios		{font-size:15px; color:#000; border:1px solid #06b16c;margin: 11px;}
+.login-reg .list-ios .item-ios .item-inner				{padding-right:0px !important; }
+.login-reg .list-ios .item-ios							{padding-left:0px !important; background:none; border-bottom:1px solid #f977a6; padding-bottom: 5px;}
+.login-btn												{float:right;margin-top:-34px; padding:0px; position:relative; background:rgba(0, 0, 0, 0) linear-gradient(to right, #06b16d 0%, #09b674 33%, #10c287 51%, #15cb94 68%, #16cc95 100%); border-radius:0px;text-transform: capitalize; font-weight:400; width:92%;}
+.login-reg .list-ios .item-block .input-wrapper .label-ios{ margin:0px;font-size:19px; color:#000;font-family: 'Padauk', sans-serif;}
+.login-reg .list-ios .item-block{min-height:30px !important;}
+.login-reg .list-ios{ margin:10px;}
+.badge-ios{ background:#7e7e7e; font-size:14px; font-family: 'Padauk', sans-serif; color:#fff; font-weight:400;}
+.list-ios > .item-block:first-child{border-top:none !important;}
+/*------------------------------Ios css end------------------------------*/
+}

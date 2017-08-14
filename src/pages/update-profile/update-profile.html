@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-navbar color="donorcolor">
+    <button ion-button menuToggle right end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Update Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="signup-bgimg">
+<ion-card class="login-reg">
+<br/>
+
+<ion-list >
+  <ion-item>
+    <ion-input type="text" placeholder="Name *"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" placeholder="Mobile *"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" placeholder="Email *"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-textarea placeholder="Address *"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" placeholder="Enter your address"></ion-input>
+  </ion-item>
+</ion-list>
+<ion-list class="select-donor">
+  <ion-item>
+  <ion-label>Country *</ion-label>
+  <ion-select [(ngModel)]="Country">
+    <ion-option value="f">India</ion-option>
+    <ion-option value="m">China</ion-option>
+  </ion-select>
+</ion-item>
+</ion-list>
+<ion-list class="select-donor">
+  <ion-item>
+  <ion-label>State *</ion-label>
+  <ion-select [(ngModel)]="State">
+    <ion-option value="f">Tamil Nadu</ion-option>
+    <ion-option value="m">Kerala</ion-option>
+  </ion-select>
+</ion-item>
+</ion-list>
+
+<ion-list class="select-donor">
+  <ion-item>
+  <ion-label>City *</ion-label>
+  <ion-select [(ngModel)]="City">
+    <ion-option value="f">Chennai</ion-option>
+    <ion-option value="m">Salem</ion-option>
+  </ion-select>
+</ion-item>
+</ion-list>
+
+<ion-list>
+ <ion-item>
+    <ion-input type="text" placeholder="Zip *"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<br/>
+<br/>
+</ion-card>
+<!------button------>
+ <button class="login-btn" ion-button small (click)="updateProfile()">Update<i class="fa fa-angle-double-right"></i></button>
+ <!------button end------>
+
+<br/><br/>
+
+</ion-content>

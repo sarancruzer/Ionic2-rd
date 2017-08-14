@@ -1,0 +1,108 @@
+<ion-header>
+  <ion-navbar color="donorcolor">
+    <button ion-button menuToggle right end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Send Donation</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="signup-bgimg">
+<div class="log-reg"><img src="assets/images/reli.png"/><h1>Temple</h1></div>
+<ion-card class="login-reg">
+<br><br>
+<ion-list style="1px solid #000">
+  <ion-item>
+   <ion-label> Product</ion-label>    
+    <ion-badge item-end>Rice</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Description</ion-label>
+    <ion-badge item-end>Rice Bag</ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Needs</ion-label>
+    <ion-badge item-end>13 KGs</ion-badge>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Quantity</ion-label>
+    <ion-input type="text" value=""></ion-input> <ion-badge item-end>KGs</ion-badge>
+  </ion-item>
+  
+   <ion-item>
+    <ion-label>Donation Mode</ion-label>
+    <ion-select [(ngModel)]="gaming" class="select-bg">
+      <ion-option value="By Hand - I will deliver">By Hand - I will deliver</ion-option>
+      <ion-option value="By Hand - Please come and Pick it">By Hand - Please come and Pick it</ion-option>      
+    </ion-select>
+  </ion-item>
+</ion-list>
+</ion-card>
+<ion-card class="login-reg">
+<ion-list style="1px solid #000">
+  <ion-item>
+   <ion-label> Product</ion-label>    
+    <ion-badge item-end>Dal</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Description</ion-label>
+    <ion-badge item-end>Dal Bag</ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Needs</ion-label>
+    <ion-badge item-end>8 KGs</ion-badge>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Quantity</ion-label>
+    <ion-input type="text" value=""></ion-input> <ion-badge item-end>KGs</ion-badge>
+  </ion-item>
+  
+   <ion-item>
+    <ion-label>Donation Mode</ion-label>
+    <ion-select [(ngModel)]="gaming" class="select-bg">
+      <ion-option value="By Hand - I will deliver">By Hand - I will deliver</ion-option>
+      <ion-option value="By Hand - Please come and Pick it">By Hand - Please come and Pick it</ion-option>  
+    </ion-select>
+  </ion-item>
+</ion-list>
+</ion-card>
+<ion-card class="login-reg">
+<ion-list style="1px solid #000">
+  <ion-item>
+   <ion-label> Product</ion-label>    
+    <ion-badge item-end>Oil</ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Description</ion-label>
+    <ion-badge item-end>Oil Bag</ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Needs</ion-label>
+    <ion-badge item-end>5 Liters</ion-badge>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Quantity</ion-label>
+    <ion-input type="text" value=""></ion-input> <ion-badge item-end>Liters</ion-badge>
+  </ion-item>
+  
+   <ion-item>
+    <ion-label>Donation Mode</ion-label>
+    <ion-select [(ngModel)]="gaming" class="select-bg">
+      <ion-option value="By Hand - I will deliver">By Hand - I will deliver</ion-option>
+      <ion-option value="By Hand - Please come and Pick it">By Hand - Please come and Pick it</ion-option>  
+    </ion-select>
+  </ion-item>
+</ion-list>
+<br/><br/>
+</ion-card>
+<!------button------>
+ <button class="login-btn" ion-button small (click)="submitDonation()">Send <i class="fa fa-angle-double-right"></i></button>
+ <!------button end------>
+
+</ion-content>

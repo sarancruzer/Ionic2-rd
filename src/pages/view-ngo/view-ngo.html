@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-navbar color="donorcolor">
+    <button ion-button menuToggle right end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title center>View NGO</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="page-donor">
+<ion-list class="contact-list">
+<ion-row>
+    <ion-col class="loacation-detalis">
+	 <b>About Us</b>
+	<p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+	</ion-col>
+	</ion-row>
+
+<br/>
+<ion-row>
+<ion-col>
+
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="location">
+      Location
+    </ion-segment-button>
+    <ion-segment-button value="needs">
+      Current Needs
+    </ion-segment-button>
+    <ion-segment-button value="contact" style="border-right:none;">
+      Contact
+    </ion-segment-button>
+  </ion-segment>
+
+</ion-col>
+
+</ion-row>
+<br/>
+
+
+<ion-row>
+<ion-col>
+<div [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'needs'">
+   <ion-row>
+    <ion-col class="loacation-detalis">
+   <b>Current Needs</b>
+       <ion-badge>Rice</ion-badge>
+    <ion-badge>Dhal</ion-badge>  
+  </ion-col>
+  </ion-row>
+  </ion-list>
+
+<ion-list *ngSwitchCase="'contact'">   
+  <ion-row>
+  <ion-col class="loacation-detalis">
+      <b>Details</b>
+  <p><i class="fa fa-map-marker" aria-hidden="true"></i>Angola</p>
+  <p><i class="fa fa-phone" aria-hidden="true"></i> 0423 453433</p>
+  <p><i class="fa fa-globe" aria-hidden="true"></i> http://fontawesome.io</p>
+  </ion-col>
+  </ion-row>
+  </ion-list>
+  <ion-list *ngSwitchCase="'location'" class="location-leade">
+    <ion-row>
+    <ion-col>
+   <b>Join Hands</b>
+   <p><i class="fa fa-map-marker"></i> &nbsp;3/2, Karpaga Vinayagar Kovil Street, Alandur,
+Chennai – 600016, India</p>
+</ion-col>
+</ion-row>    
+  </ion-list>
+</div>
+</ion-col>
+</ion-row>
+
+
+
+
+
+
+
+</ion-list>
+
+<button ion-button full (click)="helpthem()" class="login-btn">Help Them &nbsp;&nbsp; <i class="fa fa-question" aria-hidden="true"></i></button>
+
+
+
+</ion-content>
